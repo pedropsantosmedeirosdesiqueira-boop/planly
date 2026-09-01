@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planly — Organize. Planeje. Conquiste.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">P</div>
+  <strong>Planly</strong>
+
+  <nav>
+    <a href="#recursos">Recursos</a>
+    <a href="#premium">Premium</a>
+  </nav>
+
+  <button onclick="abrirPlanner()">Começar grátis</button>
+</header>
+
+<section class="hero">
+
+  <div>
+    <span class="tag">✦ SEU NOVO JEITO DE PLANEJAR</span>
+
+    <h1>
+      Transforme seus planos em
+      <span>realidade.</span>
+    </h1>
+
+    <p>
+      Metas, tarefas, hábitos e dinheiro em um só lugar.
+      O Planly ajuda você a saber o que fazer hoje
+      para chegar onde quer amanhã.
+    </p>
+
+    <button onclick="abrirPlanner()">
+      Criar meu planejamento →
+    </button>
+  </div>
+
+  <div class="dashboard">
+
+    <h3>Bom dia 👋</h3>
+    <h2>Seu dia, do seu jeito.</h2>
+
+    <div class="progress">
+      <div>
+        <span>Progresso da semana</span>
+        <b>72%</b>
+      </div>
+
+      <div class="bar">
+        <div></div>
+      </div>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        🎯
+        <small>Meta principal</small>
+        <strong>R$ 10.000</strong>
+        <span>62% concluído</span>
+      </div>
+
+      <div class="card">
+        🔥
+        <small>Sequência</small>
+        <strong>12 dias</strong>
+        <span>Continue assim!</span>
+      </div>
+
+    </div>
+
+    <h3>Hoje</h3>
+
+    <label>
+      <input type="checkbox" checked>
+      Organizar prioridades
+    </label>
+
+    <label>
+      <input type="checkbox" checked>
+      30 min de estudo
+    </label>
+
+    <label>
+      <input type="checkbox">
+      Treino às 19:00
+    </label>
+
+  </div>
+
+</section>
+
+<section id="recursos">
+
+  <div class="center">
+    <span class="tag">TUDO EM UM SÓ LUGAR</span>
+
+    <h2>Menos bagunça. Mais progresso.</h2>
+
+    <p>
+      Organize as partes importantes da sua vida
+      em um único lugar.
+    </p>
+  </div>
+
+  <div class="features">
+
+    <article>
+      🎯
+      <h3>Metas</h3>
+      <p>Defina objetivos claros e acompanhe seu progresso.</p>
+    </article>
+
+    <article>
+      ✅
+      <h3>Tarefas</h3>
+      <p>Organize seu dia e saiba qual é o próximo passo.</p>
+    </article>
+
+    <article>
+      🔥
+      <h3>Hábitos</h3>
+      <p>Crie consistência acompanhando suas sequências.</p>
+    </article>
+
+    <article>
+      💰
+      <h3>Dinheiro</h3>
+      <p>Planeje seus gastos e objetivos financeiros.</p>
+    </article>
+
+    <article>
+      📚
+      <h3>Estudos</h3>
+      <p>Monte cronogramas e organize sua rotina.</p>
+    </article>
+
+    <article>
+      🤖
+      <h3>Plano inteligente</h3>
+      <p>Transforme seu objetivo em ações práticas.</p>
+    </article>
+
+  </div>
+
+</section>
+
+<section id="premium" class="pricing">
+
+  <span class="tag">PREMIUM</span>
+
+  <h2>Comece grátis. Evolua quando quiser.</h2>
+
+  <div class="price">
+
+    <h3>Planly Pro</h3>
+
+    <strong>
+      R$ 14,90
+      <small>/mês</small>
+    </strong>
+
+    <p>✓ Planos inteligentes</p>
+    <p>✓ Metas ilimitadas</p>
+    <p>✓ Relatórios</p>
+    <p>✓ Histórico</p>
+
+    <button onclick="alert('Em breve!')">
+      Quero o Pro
+    </button>
+
+  </div>
+
+</section>
+
+<footer>
+  <strong>Planly</strong>
+  <span>© 2026 Planly</span>
+</footer>
+
+
+<!-- PLANNER -->
+
+<div id="planner">
+
+  <div class="modal">
+
+    <button class="fechar" onclick="fecharPlanner()">×</button>
+
+    <span class="tag">SEU PRIMEIRO PLANO</span>
+
+    <h2>Qual é o seu objetivo?</h2>
+
+    <input
+      id="objetivo"
+      placeholder="Ex.: juntar R$ 10.000"
+    >
+
+    <input
+      id="prazo"
+      placeholder="Ex.: em 12 meses"
+    >
+
+    <button onclick="gerarPlano()">
+      Gerar meu plano →
+    </button>
+
+    <div id="resultado"></div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
